@@ -64,6 +64,7 @@ mlflow_rest <- function( ..., client, query = NULL, data = NULL, verb = "GET", v
            req_headers)
     },
     POST = function(){
+      print(api_url)
       POST( api_url,
             body = if (is.null(data)) NULL else rapply(data, as.character, how = "replace"),
             encode = "json",
