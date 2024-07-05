@@ -179,7 +179,7 @@ mlflow_get_latest_versions <- function(name, client = NULL) {
     client = client,
     verb = "POST",
     version = "2.0",
-    query = list(
+    data = list(
       name = forge::cast_string(name)
     )
   )
