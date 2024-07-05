@@ -177,7 +177,7 @@ mlflow_get_latest_versions <- function(name, stages = list(), client = NULL) {
     "registered-models",
     "get-latest-versions",
     client = client,
-    verb = "GET",
+    verb = "POST",
     version = "2.0",
     query = list(
       name = forge::cast_string(name),
