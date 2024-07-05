@@ -170,7 +170,7 @@ mlflow_search_registered_models <- function(filter = NULL,
 #'   latest versions for ALL_STAGES.
 #' @template roxlate-client
 #' @export
-mlflow_get_latest_versions <- function(name, stages = list(), client = NULL) {
+mlflow_get_latest_versions <- function(name, client = NULL) {
   client <- resolve_client(client)
 
   response <- mlflow_rest(
