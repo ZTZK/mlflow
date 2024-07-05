@@ -9,9 +9,6 @@ mlflow_get_latest_versions(name, stages = list(), client = NULL)
 \arguments{
 \item{name}{Name of the model.}
 
-\item{stages}{A list of desired stages. If the input list is NULL, return
-latest versions for ALL_STAGES.}
-
 \item{client}{(Optional) An MLflow client object returned from \link[mlflow]{mlflow_client}.
 If specified, MLflow will use the tracking server associated with the passed-in client. If
 unspecified (the common case),
